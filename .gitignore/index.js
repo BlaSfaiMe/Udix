@@ -11,7 +11,7 @@ bot.on('ready', async () => {
     console.log("Udix est prêt ! by BlaSfaiMe")
 });
 
-bot.login(reglagebot.token);
+bot.login(process.env.TOKEN);
 
 bot.on("guildMemberAdd", member => {
     member.guild.channels.find("name", "règlement📚").send(`:smiley: ${member.user.username.tag } viens de rejoindre le serveur !`)
