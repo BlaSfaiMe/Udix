@@ -4,10 +4,10 @@ const Youtube = require("./youtube.js");
 const Play = require("./play");
 
 var bot = new Discord.Client();
-var prefix = (reglagebot.prefix)
+var prefix = "U"
 
 bot.on('ready', async () => {
-    bot.user.setPresence({ game: { name: 'prefix u - Udix', type: 0}});
+    bot.user.setActivity("U prefix | type Uhelp", { type: 'STREAMING'});
     console.log("Udix est prêt ! by BlaSfaiMe")
 });
 
